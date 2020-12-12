@@ -9,6 +9,7 @@ body{
 }
 header{
     background-image: url(../images/photo\ header.jpg);
+    background-attachment: fixed;
     background-size: cover;
     width: 100%;
     height: 650px;
@@ -133,23 +134,23 @@ a{
        
     }
 
-    footer {
+    /* .footer2 {
         display:flex;
-        /* justify-items:center ; */
+         justify-items:center ; 
         background-color: rgb(24, 24, 24);
         justify-content: space-around;
         width: 100%;
-    }
+    }  */
 
     #logo {
         background-color: black;
         font-size: 40px;
-        width: 250px; 
+         /* width: 250px;   */
         color: white;
-        border: white solid 3px;
+         border: white solid 3px; 
         /* margin-left: 70px; */
-        margin: auto;
-        margin-top: 5px;
+        /* margin: auto;
+         margin-top: 5px;  */
     
         
     }
@@ -161,30 +162,91 @@ a{
 
     #maps{
         width: 70%;
-        margin-top:10px;
-        margin-bottom: 10px;
+         /* margin-top:10px; 
+        margin-bottom: 10px;  */
 
     }
 
-    .carre3{
-        display: flex;
+    /* .carre3{
+        display: flex; 
         justify-content: space-around;
         align-items: center;
-    }
+    } */
 
-    .carre3 img{
+     .carre3 img{
         width:  20% ;
         height: 50px;
-    }
-    .carre1, .carre2, .carre3{
+    } 
+    /* .carre1, .carre2, .carre3{
         width:33%;
-    }
+    } */
 
     .carre1{
         text-align: center;
         margin: auto;
     }
 
+   #adresse{
+       color: white;
+       margin-left: 40px;
+   }
+
+   /* .ligne{
+     display: flex; 
+       justify-content: space-around;
+        background-color: rgb(24, 24, 24);
+       color: white;
+       border-top: white solid 1px;
+       border-right: white solid 1px ; */
+    
+   /* } */
+
+   /* .border{
+       border-right:white solid 1px ;
+       height: 20px;
+       width: 30%;
+       text-align: center; */
+       
+   
+    footer{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       background-color: rgb(24, 24, 24);
+     
+   } 
+   
+   .ligneend{
+       display: grid;
+       align-items: center;
+       justify-content: center;
+       color: white;
+   }
+
+   #navIcon{ 
+    display: none;}
+    
+   @media screen and (max-width:900px) {
+    #container {
+       flex-direction: column;}
+    
+        a{
+          display: none;} 
+    
+    #navIcon{ 
+        display: block;}
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    }
+   
+
+  
 
 
    
